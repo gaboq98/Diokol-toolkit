@@ -15,6 +15,7 @@ class GUI {
   int mouseX;
   int mouseY;
 
+  color componentColor = color(222, 147, 147);
   int normalColor = 255;
   int hoverColor = 204;
   int activeColor = 156;
@@ -98,7 +99,7 @@ boolean _Box(int x, int y, int w, int h, boolean t, boolean c, int g) {
   
   boolean checked = (ui.values.get(id)==null)?c:(boolean)ui.values.get(id);
   int fillColor = (id==ui.activeId||checked)?ui.activeColor:
-                     (id==ui.hoverId)?ui.hoverColor:ui.normalColor;
+                     (id==ui.hoverId)?ui.hoverColor:ui.componentColor;
   stroke(ui.strokeColor); 
   fill(fillColor);
   if (id == ui.activeId) {

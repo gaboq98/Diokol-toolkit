@@ -5,8 +5,8 @@ void setup() {
 }
 
 void draw() {
-  background(243);
-  
+  background(250);
+
   ui.begin();
   
   Label("Label",10,10);
@@ -22,7 +22,7 @@ void draw() {
   RadioButton("Button 1",150,120,1,false);
   RadioButton("Button 2",250,120,1,false);
     
-  ToolBar(new String[] {"Apples","Oranges","Bananas"},10,160,true);
+  ToolBar(new String[] {"Option 1","Option 2","Option 3"},10,160,true);
   
   ListBox(new String[] {"Apples","Oranges","Bananas"},150,10,true);
   
@@ -31,4 +31,5 @@ void draw() {
   Slider(10,100,240);
 
   ui.end();
+
 }
